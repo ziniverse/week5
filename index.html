@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Map</title>
+    <link rel="stylesheet" href="src/leaflet.css" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div id="map"></div>
+    <script src="src/leaflet.js"></script>
+    <script src="src/index.js"></script>
+    <script>
+      if (document.readyState !== "loading") {
+        console.log("Document is ready!");
+        initializeCode();
+      } else {
+        document.addEventListener("DOMContentLoaded", function () {
+          console.log("Document is ready after waiting!");
+          initializeCode();
+        });
+      }
+    </script>
+  </body>
+</html>
